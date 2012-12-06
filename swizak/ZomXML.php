@@ -7,13 +7,15 @@
 	*	http://www.snowcorp.cl/apps/swizak
 	*	contacto@snowcorp.cl
 	****************************************************
-	*	Versión 1.0
+	*	Versión 1.01
 	*	XML Compatible: 2.171
 	****************************************************/
 
 	class ZomXML{
 		private $url;
 		private $language;
+		private $statusurl;
+		private $ghosturl;
 		
 		private $key;
 		private $skey;
@@ -33,19 +35,23 @@
 		
 		function ZomXML($language){
 			$this->language = $language;
+			$baseurl = "";
+			
 			switch($language){
 				case "es":
-					$this->url = "http://www.zombinoia.com/xml/";
-					$this->statusurl = "http://www.zombinoia.com/xml/status";
+					$baseurl = "http://www.zombinoia.com";
 					break;
 				case "fr":
-					$this->url = "http://www.hordes.fr/xml/";
-					$this->statusurl = "http://www.hordes.fr/xml/status";
+					$baseurl = "http://www.hordes.fr";
+					break;
 				case "en":
-					$this->url = "http://www.die2nite.com/xml/";
-					$this->statusurl = "http://www.die2nite.com/xml/status";
+					$baseurl = "http://www.die2nite.com";
+					break;
 			}
 			
+			$this->url = "$baseurl/xml/";
+			$this->statusurl = "$baseurl/xml/status";
+			$this->ghosturl = "$baseurl/xml/ghost";
 		}
 		
 		function getStatus(){
