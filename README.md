@@ -13,7 +13,7 @@ OO-PHP classes library for Hordes / Die2Nite / Zombinoia
 3. [Versions](#4-versions)
 4. [TODO](#5-todo)
 
-**EspaÒol**
+**Espa√±ol**
 
 1. [Instrucciones](#1-instrucciones)
 2. [Acerca de...](#2-acerca-de)
@@ -31,11 +31,11 @@ Thanks to this PHP Package, you can load a Zombinoia, Hordes or Die2Nite XML and
 
 2. To prepare the Objects, you must add the following lines in your file:
 
->`require_once("swizak.php");
+>`require_once("swizak.php");`
 
->$page = new ZomXML("en");
+>`$page = new ZomXML("en");`
 
->$page->load($userkey);`
+>`$page->load($userkey);`
 
 If you have a Developer Key, you can add it as a parameter on load function:
 
@@ -62,11 +62,11 @@ V1.0 - Compatible with XML 2.171 - Added base code.
 - Test XML with Developer Key.
 - Develop Wiki.
 
-# EspaÒol #
+# Espa√±ol #
 
 ## 1. Instrucciones ##
 
-Gracias a este paquete PHP, podr·s cargar cualquier XML de Zombinoia, Hordes o Die2Nite y manejarlo mediante Objetos en PHP. 
+Gracias a este paquete PHP, podr√°s cargar cualquier XML de Zombinoia, Hordes o Die2Nite y manejarlo mediante Objetos en PHP. 
 
 1. Descarga y descomprime el archivo **swizak-latest.tar**.
 
@@ -78,15 +78,15 @@ Gracias a este paquete PHP, podr·s cargar cualquier XML de Zombinoia, Hordes o D
 
 >`$pagina->load($userkey);`
 
-Si tienes una Key de Desarrollador, simplemente agrega el par·metro al load:
+Si tienes una Key de Desarrollador, simplemente agrega el par√°metro al load:
 
 >`$pagina->load($userkey,$devkey);`
 
-El paquete se encargar· de leer el XML y transformarlo en Objetos PHP.
+El paquete se encargar√° de leer el XML y transformarlo en Objetos PHP.
 
 ## 2. Acerca de ##
 
-La Swiss Zombie Army Knife (o SwiZAK) fuÈ desarrollada por Snow como una forma de simplificar el desarrollo a los programadores, enfocando su esfuerzo en desarrollar un sinfin de aplicaciones y ahorrando el esfuerzo en leer el XML.
+La Swiss Zombie Army Knife (o SwiZAK) fu√© desarrollada por Snow como una forma de simplificar el desarrollo a los programadores, enfocando su esfuerzo en desarrollar un sinfin de aplicaciones y ahorrando el esfuerzo en leer el XML.
 
 ## 3. Requerimientos ##
 
@@ -97,7 +97,7 @@ Probado en PHP 5.3.8
 
 ## 4. Versiones ##
 
-V1.0 - Compatible con el XML 2.171 - Agregado cÛdigo base.
+V1.0 - Compatible con el XML 2.171 - Agregado c√≥digo base.
 
 ## 5. Por Hacer ##
 
