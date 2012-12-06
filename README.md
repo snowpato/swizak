@@ -45,7 +45,7 @@ If you have a Developer Key, you can add it as a parameter on load function:
 
 ## 2. About ##
 
-The Swiss Zombie Army Knife (or SwiZAK) was developed by Snow as a way to simplify the developing for programmers, focusing their efforts to make smart apps not wasting efforts in reading the XML.
+The Swiss Zombie Army Knife (or SwiZAK) was developed by [Snow](http://twinoid.com/user/2485) as a way to simplify the developing for programmers, focusing their efforts to make smart apps not wasting efforts in reading the XML.
 
 ## 3. Requirements ##
 
@@ -88,7 +88,7 @@ El paquete se encargará de leer el XML y transformarlo en Objetos PHP.
 
 ## 2. Acerca de ##
 
-La Swiss Zombie Army Knife (o SwiZAK) fué desarrollada por Snow como una forma de simplificar el desarrollo a los programadores, enfocando su esfuerzo en desarrollar un sinfin de aplicaciones y ahorrando el esfuerzo en leer el XML.
+La Swiss Zombie Army Knife (o SwiZAK) fué desarrollada por [Snow](http://twinoid.com/user/2485) como una forma de simplificar el desarrollo a los programadores, enfocando su esfuerzo en desarrollar un sinfin de aplicaciones y ahorrando el esfuerzo en leer el XML.
 
 ## 3. Requerimientos ##
 
