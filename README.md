@@ -1,6 +1,8 @@
 Swiss Zombie Army Knife
 ========================
 
+![SwiZAK Logo](https://dl.dropbox.com/u/87428962/swizak-logo.png)
+
 OO-PHP classes library for Hordes / Die2Nite / Zombinoia
 
 # Contents #
