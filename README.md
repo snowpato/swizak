@@ -5,7 +5,7 @@ OO-PHP classes library for Hordes / Die2Nite / Zombinoia
 
 # Contents #
 
-## English ##
+### English ###
 
 1. [Instructions](#1-instructions)
 2. [About...](#2-about)
@@ -13,7 +13,7 @@ OO-PHP classes library for Hordes / Die2Nite / Zombinoia
 3. [Versions](#4-versions)
 4. [TODO](#5-todo)
 
-## Español ##
+### Español ###
 
 1. [Instrucciones](#1-instrucciones)
 2. [Acerca de...](#2-acerca-de)
