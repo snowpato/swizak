@@ -5,13 +5,16 @@ OO-PHP classes library for Hordes / Die2Nite / Zombinoia
 
 # Contents #
 
-- **English**
+**English**
+
 1. [Instructions](#1-instructions)
 2. [About...](#2-about)
 2. [Requiremets](#3-requirements)
 3. [Versions](#4-versions)
 4. [TODO](#5-todo)
-- **Español**
+
+**Español**
+
 1. [Instrucciones](#1-instrucciones)
 2. [Acerca de...](#2-acerca-de)
 2. [Requerimientos](#3-requerimientos)
@@ -28,11 +31,11 @@ Thanks to this PHP Package, you can load a Zombinoia, Hordes or Die2Nite XML and
 
 2. To prepare the Objects, you must add the following lines in your file:
 
->`require_once("swizak.php");`
+>`require_once("swizak.php");
 
->`$page = new ZomXML("en");`
+>$page = new ZomXML("en");
 
->`$page->load($userkey);`
+>$page->load($userkey);`
 
 If you have a Developer Key, you can add it as a parameter on load function:
 
