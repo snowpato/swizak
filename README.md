@@ -71,7 +71,7 @@ V1.0 - Compatible with XML 2.171 - Added base code.
 ## 6. Disclaimer ##
 
 Hordes, Zombinoia and Die2Nite are games made and developed by Motion-Twin. All the rerefences of the XML are trademarked by their respective owners.
-This tools isn't related with Motion-Twin and/or any of their developers.
+This tools is not related with Motion-Twin and/or any of their developers.
 
 # Español #
 
