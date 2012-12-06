@@ -60,6 +60,25 @@
 			return $status->status;
 		}
 		
+		private function loadGhostXML($xmlbase = ""){
+			if(empty($xmlbase)){
+				$super = (!empty($this->skey))?";".SKEY."=".$this->skey:"";
+				$xmlurl = $this->url."?".KEY."=".$this->key.$super;
+				
+				$xmlbrute = file_get_contents($xmlurl);
+				$this->xmlbrute = $xmlbrute;
+				$xml = simplexml_load_string($xmlbrute);
+			}
+			else{
+				$this->xmlbrute = $xmlbase;
+				$xml = simplexml_load_string($xmlbase);
+			}
+			
+			$this->ghost = $xml;
+			
+			return $xml;
+		}
+		
 		function setKey($k){
 			$this->key = $k;
 		}

@@ -1,8 +1,10 @@
-**Copyright (c) 2012, Patricio Pérez (Snow)**
+**SwiZAK: Copyright (c) 2012, Patricio Pérez (Snow)**
 
 **http://www.snowcorp.cl**
 
 **All rights reserved.**
+
+** ordes, Zombinoia & Die2Nite are Trademarks of Motion-Twin: http://www.motion-twin.com**
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
