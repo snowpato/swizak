@@ -38,15 +38,19 @@
 		}
 		
 		function isDead(){
-			return intvalue($this->dead);
+			return intval($this->dead);
+		}
+		
+		function isAlive(){
+			return !$this->isDead();
 		}
 		
 		function isBan(){
-			return intvalue($this->ban);
+			return intval($this->ban);
 		}
 		
 		function isHero(){
-			return intvalue($this->hero);
+			return intval($this->hero);
 		}
 		
 		function getJob(){
@@ -62,7 +66,7 @@
 		}
 		
 		function isOut(){
-			return intvalue($this->out);
+			return intval($this->out);
 		}
 		
 		function posX(){
@@ -71,6 +75,23 @@
 		
 		function posY(){
 			return $this->y;
+		}
+		
+		function imgJob(){
+			switch($this->job){
+				case "basic":	
+					return "item_basic_suit";
+				case "hunter":	
+					return "item_surv_book";
+				case "eclair":	
+					return "item_vest_on";
+				case "tamer":	
+					return "item_tamed_pet";
+				case "guardian":	
+					return "item_shield";
+				default:
+					return;
+			}
 		}
 	}
 ?>

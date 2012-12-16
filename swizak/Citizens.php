@@ -56,6 +56,54 @@
 			}
 			return $usr;
 		}
+		
+		function citizensInZoneOut($x,$y){
+			$c = null;
+			
+			foreach($this->citizens as $key=>$citizen){
+				if($citizen->isOut() && $citizen->posX() == $x && $citizen->posY() == $y){
+					$c[] = $citizen;
+				}
+			}
+			
+			return $c;
+		}
+		
+		function citizensInZone($x,$y){
+			$c = null;
+			
+			foreach($this->citizens as $key=>$citizen){
+				if($citizen->posX() == $x && $citizen->posY() == $y){
+					$c[] = $citizen;
+				}
+			}
+			
+			return $c;
+		}
+		
+		function citizensInHome(){
+			$c = null;
+			
+			foreach($this->citizens as $key=>$citizen){
+				if(!$citizen->isOut()){
+					$c[] = $citizen;
+				}
+			}
+			
+			return $c;
+		}
+		
+		function countAlive(){
+			$c = 0;
+			
+			foreach($this->citizens as $key=>$citizen){
+				if($citizen->isAlive()){
+					$c++;
+				}
+			}
+			
+			return $c;
+		}
 	}
 	
 ?>

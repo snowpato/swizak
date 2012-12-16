@@ -12,6 +12,7 @@
 	****************************************************/
 
 	class ZomXML{
+		private $base;
 		private $url;
 		private $language;
 		private $statusurl;
@@ -49,9 +50,14 @@
 					break;
 			}
 			
+			$this->base = "$baseurl";
 			$this->url = "$baseurl/xml/";
 			$this->statusurl = "$baseurl/xml/status";
 			$this->ghosturl = "$baseurl/xml/ghost";
+		}
+		
+		function getCitizenInfo($usr){
+			return $this->base."/#ghost/city?go=ghost/user?uid=$usr";
 		}
 		
 		function getStatus(){

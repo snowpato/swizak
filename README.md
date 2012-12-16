@@ -58,6 +58,7 @@ Tested on PHP 5.3.8
 
 ## 4. Versions ##
 
+V1.02 - Added a lot of new functions and fixed a lot of bugs.
 V1.01 - Added Soul(Ghost) XML.
 V1.0 - Compatible with XML 2.171 - Added base code.
 
@@ -108,6 +109,7 @@ Probado en PHP 5.3.8
 
 ## 4. Versiones ##
 
+V1.02 - Agregada muchas funcionalidades y corregidos varios bugs.
 V1.01 - Agregado XML para alma.
 V1.0 - Compatible con el XML 2.171 - Agregado código base.
 

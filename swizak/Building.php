@@ -41,8 +41,8 @@
 		}
 		
 		function isParent(){
-			if(!empty($this->parental)) return 1;
-			else return 0;
+			if(empty($this->parental)) return true;
+			else return false;
 		}
 		
 		function getID(){

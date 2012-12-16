@@ -28,5 +28,15 @@
 		function getCadaverList(){
 			return $this->cadavers;
 		}
+		
+		function countDead(){
+			$c = 0;
+			
+			foreach($this->cadavers as $cadaver){
+				$c++;
+			}
+			
+			return $c;
+		}
 	}
 ?>

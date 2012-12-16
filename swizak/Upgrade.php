@@ -29,14 +29,14 @@
 		}
 		
 		function getLevel(){
-			return $this->level;
+			return intval($this->level);
 		}
 		
 		function getID(){
-			return $this->idBuild;
+			return intval($this->idBuild);
 		}
 		
-		function getDescr(){
+		function getDescription(){
 			return $this->descr;
 		}
 		

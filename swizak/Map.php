@@ -40,6 +40,25 @@
 			return $this->zDiscover;
 		}
 		
+		function getWidth(){
+			return $this->width;
+		}
+		
+		function getHeight(){
+			return $this->height;
+		}
+		
+		function getZone($x, $y){
+			$zones = $this->getZonesDiscovered();
+			
+			foreach($zones as $key=>$zone){
+				if($zone->getX() == $x && $zone->getY() == $y){
+					return $zone;
+				}
+			}
+			return;
+		}
+		
 		function getZonesVisited(){
 			$zVisited = null;
 			$zones = $this->getZonesDiscovered();
@@ -49,6 +68,63 @@
 				}
 			}
 			return $zVisited;
+		}
+		
+		function isZoneVisited($x,$y){
+			$zVisited = $this->getZonesVisited();
+			
+			foreach($zVisited as $key=>$zone){
+				if($zone->getX() == $x and $zone->getY() == $y){
+					return 1;
+				}
+			}
+			return 0;
+		}
+		
+		function isZoneDiscovered($x,$y){
+			$zones = $this->getZonesDiscovered();
+			foreach($zones as $key=>$zone){
+				if($zone->getX() == $x && $zone->getY() == $y){
+					return 1;
+				}
+			}
+			return 0;
+		}
+		
+		function zoneHaveRuin($x,$y){
+			$zones = $this->getZonesDiscovered();
+			foreach($zones as $key=>$zone){
+				if($zone->getX() == $x && $zone->getY() == $y){
+					if($zone->haveBuild()) return 1;
+				}
+			}
+			return 0;
+		}
+		
+		function getZombieCount($x,$y){
+			$zones = $this->getZonesDiscovered();
+			
+			foreach($zones as $key=>$zone){
+				if($zone->getX() == $x and $zone->getY() == $y){
+					return $zone->getZombies();
+				}
+			}
+			return 0;
+		}
+		
+		function getTagImg($x,$y){
+			$zones = $this->getZonesDiscovered();
+			
+			foreach($zones as $key=>$zone){
+				if($zone->getX() == $x and $zone->getY() == $y){
+					$tag = $zone->getTag();
+					switch($tag){
+						case 5:
+							return "small_broken";
+					}
+				}
+			}
+			return 0;
 		}
 		
 	}

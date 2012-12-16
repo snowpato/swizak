@@ -37,15 +37,19 @@
 		}
 		
 		function getID(){
-			return $this->id;
+			return intval($this->id);
 		}
 		
 		function getCat(){
 			return $this->cat;
 		}
 		
+		function getImage(){
+			return $this->img;
+		}
+		
 		function isBroken(){
-			return intvalue($this->broken);
+			return intval($this->broken);
 		}
 	}
 ?>

@@ -51,5 +51,18 @@
 			return $array;
 		}
 		
+		function getCategoryList(){
+			$array = array();
+			
+			foreach($this->items as $key=>$item){
+				$cat = (string)$item->getCat();
+				if(!in_array($cat, $array)){
+					$array[] = $cat;
+				}
+			}
+			
+			return $array;
+		}
+		
 	}
 ?>
